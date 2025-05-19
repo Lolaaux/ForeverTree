@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@keyframes text-move-animate {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@layer components {
+  img {
+    object-fit: cover;
+    image-rendering: auto;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  .bg-homeImg {
+    background-image: url("/src/assets/img/homebg.jpg");
+    background-size: cover;
+  }
+
+  .text-move {
+    animation: text-move-animate 1s ease forwards;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 8px 14px;
+    background: #173008;
+  }
+  .sideNav {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .sideNav:hover {
+    color: #46ea00;
+    transform: translateX(-5px);
+  }
+  .about-navTxt {
+    color: #4dff00;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@layer base {
+  h1,
+  p,
+  button {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .stats h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 30px;
+  }
+  .stats p {
+    color: black;
+  }
+  .map h1 {
+    color: black;
+  }
+  div button:hover {
+    cursor: pointer;
+  }
+}

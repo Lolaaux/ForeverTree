@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Production build output
+dist/
+dist-ssr/
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+
+# Vite cache and local files
+.vite/
+.vscode/
+!.vscode/extensions.json
+
+# IDE / Editor folders and files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.local
+
